@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+import { Component, EventEmitter, input, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +8,10 @@ import { Component, input, Input } from '@angular/core';
 export class HeaderComponent {
   @Input({required: true}) page!: string
   user = input.required<string>()
+
+  @Output() clickHandler = new EventEmitter()
+
+  onClickHandler(){
+    this.clickHandler.emit()
+  }
 }
