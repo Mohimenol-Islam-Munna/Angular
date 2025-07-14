@@ -1,13 +1,20 @@
-<app-header [page]="pageTitle" user="Munna" (clickHandler)="clickHandler()"></app-header>
+<app-header
+  user="Munna"
+  [page]="pageTitle"
+  (select)="selectHandler()"
+  (clickHandler)="clickHandler()"
+></app-header>
 <main>
   <h4>This is body of the application</h4>
   <div>
     <h4>User component</h4>
     <app-user></app-user>
     <div>
-      <p>{{content()}}</p>
+      <p>{{ content() }}</p>
       <button (click)="clickHandler()">click event</button>
+      <br />
+      <button>select event</button>x
     </div>
   </div>
 </main>
-<app-footer [footerTitle] = 'footerTitle'></app-footer>
+<app-footer [footerTitle]="footerTitle"></app-footer>

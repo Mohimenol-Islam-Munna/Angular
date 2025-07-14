@@ -20,4 +20,8 @@ export class AppComponent {
   clickHandler(){
     console.log("This is click handler.")
   }
+
+  selectHandler(){
+    console.log("This is select handler.")
+  }
 }
