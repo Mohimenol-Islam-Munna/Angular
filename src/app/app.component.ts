@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -12,4 +12,8 @@ import { UserComponent } from './user/user.component';
 })
 export class AppComponent {
   title = 'angular-basic';
+  pageTitle = "This is home page";
+  footerTitle = "This is footer content";
+
+  content = signal("This is content signal")
 }

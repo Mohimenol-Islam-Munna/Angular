@@ -1,9 +1,10 @@
-<app-header></app-header>
+<app-header [page]="pageTitle" user="Munna"></app-header>
 <main>
   <h4>This is body of the application</h4>
   <div>
     <h4>User component</h4>
     <app-user></app-user>
+    <div>{{content()}}</div>
   </div>
 </main>
-<app-footer></app-footer>
+<app-footer [footerTitle] = 'footerTitle'></app-footer>

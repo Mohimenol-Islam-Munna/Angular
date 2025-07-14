@@ -1,11 +1,10 @@
 header {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     background-color: aquamarine;
-    border: 1px solid red;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 header h2 {
