@@ -4,7 +4,10 @@
   <div>
     <h4>User component</h4>
     <app-user></app-user>
-    <div>{{content()}}</div>
+    <div>
+      <p>{{content()}}</p>
+      <button (click)="clickHandler()">click event</button>
+    </div>
   </div>
 </main>
 <app-footer [footerTitle] = 'footerTitle'></app-footer>

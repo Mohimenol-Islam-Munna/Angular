@@ -16,4 +16,8 @@ export class AppComponent {
   footerTitle = "This is footer content";
 
   content = signal("This is content signal")
+
+  clickHandler(){
+    console.log("This is click handler.")
+  }
 }
